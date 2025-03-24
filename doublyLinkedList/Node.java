@@ -1,4 +1,3 @@
-// Lista duplamente encadeada
 package src.ds.doublyLinkedList;
 
 public class Node<T> { // <T> é um tipo genérico

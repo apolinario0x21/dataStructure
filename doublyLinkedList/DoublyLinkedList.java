@@ -40,7 +40,7 @@ public class DoublyLinkedList<T> {
     }
 
     public T removeFirst() {
-        if (size == 0) throw new Error("A lista está vazia.");
+        if (size == 0) throw new IllegalStateException("A lista está vazia.");
 
 
         T value = head.value;
@@ -56,7 +56,7 @@ public class DoublyLinkedList<T> {
     }
 
     public T removeLast() {
-        if (size == 0) throw new Error("Lista vazia.");
+        if (size == 0) throw new IllegalStateException("Lista vazia.");
 
         T value = tail.value;
         if (size == 1) {
@@ -83,5 +83,9 @@ public class DoublyLinkedList<T> {
 
     public int size() {
         return this.size;
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
     }
 }
