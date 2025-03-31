@@ -1,7 +1,7 @@
 package src.ds;
 import java.util.HashMap;
 
-public class Ex03_hash {
+public class Ex03_Hash {
     public static void main(String[] args) {
         System.out.println("HashMap\n");
 
